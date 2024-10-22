@@ -1,0 +1,19 @@
+
+class DemoException {
+    public static void main(String[] args) {
+        int a[] = {5, 10};  // Array with 2 elements
+        int b = 5;
+        
+        try {
+            // This will cause ArrayIndexOutOfBoundsException
+            int x = a[2] / (b - a[1]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index error...");
+        } finally {
+            System.out.println("finally block executed");
+            // Safe access of array elements
+            int y = a[1] / a[0];
+            System.out.println("Result of a[1] / a[0]: " + y);
+        }
+    }
+}

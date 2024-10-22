@@ -1,0 +1,9 @@
+
+public class PatternA { 
+    public static void main(String[] args) { 
+        String pattern = "ABCDE"; // Corrected the curly quotes
+        for (int i = pattern.length(); i > 0; i--) { 
+            System.out.println(pattern.substring(0, i)); 
+        }
+    } 
+}

@@ -1,0 +1,13 @@
+
+public class Shift { 
+    public static void main(String[] args) { 
+        int a = 9; 
+        int sr = a >> 3; 
+        int sl = a << 3; 
+        int ur = a >>> 3;
+        
+        System.out.println("Signed right shift of a by 3 = " + sr); 
+        System.out.println("Signed left shift of a by 3 = " + sl); 
+        System.out.println("Unsigned right shift of a by 3 = " + ur); 
+    }
+}
